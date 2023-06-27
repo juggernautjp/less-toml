@@ -1,34 +1,34 @@
 {
-  "name": "better-toml",
-  "displayName": "Better TOML",
-  "description": "Better TOML Language support",
-  "author": "Gigih Aji Ibrahim <bungcip@gmail.com>",
+  "name": "less-toml",
+  "displayName": "Less TOML",
+  "description": "a fork of Better TOML for minimum TOML support of VS Code",
+  "main": "index.js",
+  "author": "katsutoshi.harada@gmail.com",
   "icon": "icon.png",
-  "version": "0.3.2",
-  "publisher": "bungcip",
+  "version": "0.4.5",
+  "publisher": "juggernautjp",
   "license": "MIT",
-  "homepage": "https://github.com/bungcip/better-toml/blob/master/README.md",
+  "homepage": "https://github.com/juggernautjp/less-toml/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bungcip/better-toml.git"
+    "url": "https://github.com/juggernautjp/less-toml.git"
   },
   "bugs": {
-    "url": "https://github.com/bungcip/better-toml/issues",
-    "email": "bungcip@gmail.com"
+    "url": "https://github.com/juggernautjp/less-toml/issues",
+    "email": "katsutoshi.harada@gmail.com"
   },
   "engines": {
-    "vscode": "^1.18.0"
+    "vscode": "^1.79.2"
   },
   "categories": [
     "Languages"
   ],
-  "keywords": [
-    "toml"
-  ],
   "activationEvents": [
     "onLanguage:toml"
   ],
-  "main": "./out/src/extension",
+  "keywords": [
+    "toml"
+  ],
   "contributes": {
     "languages": [
       {
@@ -51,11 +51,11 @@
       {
         "language": "toml",
         "scopeName": "source.toml",
-        "path": "./syntaxes/TOML.tmLanguage"
+        "path": "./syntaxes/toml.tmLanguage"
       },
       {
-        "scopeName": "markdown.toml.frontmatter.codeblock",
-        "path": "./syntaxes/TOML.frontMatter.tmLanguage",
+        "scopeName": "markdown.toml.codeblock",
+        "path": "./syntaxes/markdown.tmLanguage.json",
         "injectTo": [
           "text.html.markdown"
         ]
@@ -105,25 +105,16 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "tsc -p ./",
-    "compile": "tsc -watch -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install"
-  },
-  "dependencies": {
-    "@sgarciac/bombadil": "0.0.7",
-    "node-fetch": "^2.1.2",
-    "request-light": "^0.2.2",
-    "vscode-json-languageservice": "^3.1.0",
-    "vscode-languageclient": "^4.1.3",
-    "vscode-languageserver": "^4.1.2",
-    "vscode-nls": "^3.2.2"
+    "build": "node build && vsce package",
+    "build:vsce": "vsce package",
+    "build:syntax": "node build",
+    "demo": "code --install-extension less-toml-0.4.5.vsix",
+    "test": "node ./test/runTest.js"
   },
   "devDependencies": {
-    "@types/mocha": "^5.2.0",
-    "@types/node": "^10.0.0",
-    "@types/node-fetch": "^1.6.9",
-    "mocha": "^5.1.1",
-    "typescript": "^2.8.3",
-    "vscode": "^1.1.16"
+    "js-yaml": "^4.1.0",
+    "mocha": "^10.2.0",
+    "plist": "^3.0.4",
+    "vscode-test": "^1.5.1"
   }
 }

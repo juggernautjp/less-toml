@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.0 | 2023-06-26
+
+* this is a fork of Better TOML, changed with the followoings:
+* delete Language Server feature, i.e. language validation, from Better TOML.
+* add Syntax Highlight for TOML fenced code to Better TOML.
+
+
+-----
+
 ## 0.3.2 | 2018-02-18
 
 * TOML frontmatter in markdown. Thanks to @marcobeltempo's contribution. #10

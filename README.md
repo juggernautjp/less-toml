@@ -1,21 +1,22 @@
-##
-This repository is archieved. I currently don't have time to maintain this project anymore. 
-I recommended to use https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml for better alternative.
+## Less-TOML is a fork of Better TOML
 
-# better-toml README
+I recommended to use https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml for better alternative of `Better TOML`.
 
-Better TOML is a VS Code extension to support TOML files.
+
+# Less-TOML README
+
+`Less TOML` is a fork of `Better TOML` for minimum TOML support.
+`Better TOML` is a VS Code extension to support TOML files.
 
 ## Features
 
 - Syntax Highlighting for `.toml` files
+- Syntax Highlighting for TOML frontmatter and fenced code in Markdown
 
-![Syntax Highlighting](images/feature_syntax_highlight.png)
+
+## Notice
+
+The following feature of Better TOML is deleted.
 
 - Syntax Validation for invalid input
 
-![Syntax Validation](images/feature_syntax_validation.gif)
-
-- Syntax Highlighting for markdown frontmatter
-
-![Frontmatter](images/feature_frontmatter.gif)
