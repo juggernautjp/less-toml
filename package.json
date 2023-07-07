@@ -4,7 +4,7 @@
   "description": "a fork of Better TOML for minimum TOML support of VS Code",
   "author": "katsutoshi.harada@gmail.com",
   "icon": "icon.png",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "publisher": "juggernautjp",
   "license": "MIT",
   "homepage": "https://github.com/juggernautjp/less-toml/blob/master/README.md",
@@ -62,8 +62,8 @@
     "build": "node build && vsce package",
     "build:vsce": "vsce package",
     "build:syntax": "node build",
-    "demo": "code --install-extension less-toml-0.5.0.vsix",
-    "uninstall": "code --uninstall-extension less-toml-0.5.0.vsix",
+    "demo": "code --install-extension less-toml-0.6.0.vsix",
+    "uninstall": "code --uninstall-extension less-toml-0.6.0.vsix",
     "test": "node ./test/index.ts"
   },
   "devDependencies": {
