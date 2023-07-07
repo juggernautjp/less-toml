@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0 | 2023-07-07
+
+* add syntaxes/toml.tmlanguage.json, which is converted from https://github.com/textmate/toml.tmbundle/blob/master/Syntaxes/TOML.tmLanguage
+* delete syntaxes/toml.tmlanguage
+* (So, this is not a fork of Better TOML)
+
 ## 0.4.0 | 2023-06-26
 
 * this is a fork of Better TOML, changed with the followoings:
